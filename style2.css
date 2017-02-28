@@ -1,0 +1,151 @@
+body, html {
+  height: 100%;
+}
+
+#video-background iframe{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+#wrapper {
+  background: url(sf1.png), url(sf2.png), url(sf3.png);
+  background-color: #3072c4;
+  min-height: 100%;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+#audio-controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#audio-controls a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#snowman { 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#snowman .inner {
+  position: relative;
+  display: inline-block;
+}
+
+#snowman .base{
+  position: relative;
+  z-index: 2;
+}
+
+#snowman .hand {
+  position: absolute;
+  z-index: 1;
+  right: -4%;
+  top: 40%;
+  -webkit-transform-origin: 0 100%;
+
+  animation: snowman-hand 1s ease-in-out infinite;
+  -webkit-animation: snowman-hand 1s ease-in-out infinite;
+  -ms-animation: snowman-hand 1s ease-in-out infinite;
+  -moz-animation: snowman-hand 1s ease-in-out infinite;
+}
+
+#text {
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  padding: 20% 20px 0 20px;
+  box-sizing: border-box;
+
+  text-align: center;
+  color: #fff;
+}
+
+#text .title {
+  font-size: 40px;
+}
+
+#text .subtitle  {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+#text .stih {
+  max-width: 400px;
+  margin: 40px auto 0 auto;
+}
+#text .stih p {
+  margin-bottom: 10px;
+}
+
+#text .stih p:first-letter {
+  color: red;
+  font-size: 30px;
+  margin-right: 2px;
+  text-shadow: 0 0 10px #fff;
+}
+#text {
+  font-family: 'Cormorant Infant', serif;
+  
+}
+@keyframes snowman-hand {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes snowman-hand {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@-ms-keyframes snowman-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+
+@-moz-keyframes snowman-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+
+@-o-keyframes snowman-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+
